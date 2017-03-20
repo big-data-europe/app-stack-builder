@@ -32,3 +32,12 @@
 ;; by them and that it shouldn't be used for permanent URIs.
 
 (add-prefix "ext" "http://mu.semte.ch/vocabularies/ext/")
+(add-prefix "doap" "http://usefulinc.com/ns/doap#")
+(add-prefix "w3vocab" "https://www.w3.org/1999/xhtml/vocab#")
+
+
+(add-prefix "auth" "http://mu.semte.ch/vocabularies/authorization/")
+(add-prefix "foaf" "http://xmlns.com/foaf/0.1/")
+(add-prefix "mu" "http://mu.semte.ch/vocabularies/core/")
+(add-prefix "dct" "http://purl.org/dc/terms/")
+(add-prefix "stackbuilder" "http://stackbuilder.semte.ch/vocabularies/core/")

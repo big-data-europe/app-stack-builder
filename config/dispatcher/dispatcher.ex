@@ -22,6 +22,18 @@ defmodule Dispatcher do
   #   Proxy.forward conn, path, "http://resource/themes/"
   # end
 
+  match "/docker-composes/*path" do
+    Proxy.forward conn, path, "http://resource/docker-composes/"
+  end
+
+  match "/containers/*path" do
+    Proxy.forward conn, path, "http://resource/containers/"
+  end
+
+  match "/container-groups/*path" do
+    Proxy.forward conn, path, "http://resource/container-groups/"
+  end
+
   match _ do
     send_resp( conn, 404, "Route not found.  See config/dispatcher.ex" )
   end
