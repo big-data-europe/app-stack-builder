@@ -38,6 +38,10 @@
 <http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE750675FB0009000003>	ns1:text	"Test Docker12" .
 <http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE760675FB0009000004>	ns1:text	"Test Docker123" .
 @prefix ns3:	<http://purl.org/dc/terms/> .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE700675FB0009000001>	ns3:title	"Docker Compose title1" .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE740675FB0009000002>	ns3:title	"Docker Compose title2" .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE750675FB0009000003>	ns3:title	"Docker Compose title3" .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE760675FB0009000004>	ns3:title	"Docker Compose title4" .
 <http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE850675FB0009000005>	ns3:title	"Test Group1" .
 <http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE860675FB0009000006>	ns3:title	"Test Group12" .
 <http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE870675FB0009000007>	ns3:title	"Test Group123" .

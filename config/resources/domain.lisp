@@ -2,7 +2,8 @@
 
 (define-resource docker-compose ()
   :class (s-prefix "stackbuilder:DockerCompose")
-  :properties `((:text :string ,(s-prefix "stackbuilder:text")))
+  :properties `((:text :string ,(s-prefix "stackbuilder:text"))
+                (:title :string ,(s-prefix "dct:title")))
   :resource-base (s-url "http://stack-builder.big-data-europe.eu/resources/docker-composes/")
   :on-path "docker-composes")
 
