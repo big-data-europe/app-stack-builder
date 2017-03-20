@@ -1,0 +1,56 @@
+# Dump of graph <http://mu.semte.ch/application>, as of 2017-03-20 14:34:57.150141
+@base <> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns1:	<http://stackbuilder.semte.ch/vocabularies/core/> .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE700675FB0009000001>	rdf:type	ns1:DockerCompose .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE740675FB0009000002>	rdf:type	ns1:DockerCompose .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE750675FB0009000003>	rdf:type	ns1:DockerCompose .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE760675FB0009000004>	rdf:type	ns1:DockerCompose .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE850675FB0009000005>	rdf:type	ns1:ContainerGroup .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE860675FB0009000006>	rdf:type	ns1:ContainerGroup .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE870675FB0009000007>	rdf:type	ns1:ContainerGroup .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE880675FB0009000008>	rdf:type	ns1:ContainerGroup .
+<http://stack-builder.big-data-europe.eu/resources/containers/58CFDE8C0675FB0009000009>	rdf:type	ns1:Container .
+<http://stack-builder.big-data-europe.eu/resources/containers/58CFDF35F9899B0008000001>	rdf:type	ns1:Container .
+<http://stack-builder.big-data-europe.eu/resources/containers/58CFE02299CA4D0008000001>	rdf:type	ns1:Container .
+<http://stack-builder.big-data-europe.eu/resources/containers/58CFE02499CA4D0008000002>	rdf:type	ns1:Container .
+<http://stack-builder.big-data-europe.eu/resources/containers/58CFE02899CA4D0008000003>	rdf:type	ns1:Container .
+<http://stack-builder.big-data-europe.eu/resources/containers/58CFE02A99CA4D0008000004>	rdf:type	ns1:Container .
+<http://stack-builder.big-data-europe.eu/resources/containers/58CFE02B99CA4D0008000005>	rdf:type	ns1:Container .
+@prefix ns2:	<http://mu.semte.ch/vocabularies/core/> .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE700675FB0009000001>	ns2:uuid	"58CFDE700675FB0009000001" .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE740675FB0009000002>	ns2:uuid	"58CFDE740675FB0009000002" .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE750675FB0009000003>	ns2:uuid	"58CFDE750675FB0009000003" .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE760675FB0009000004>	ns2:uuid	"58CFDE760675FB0009000004" .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE850675FB0009000005>	ns2:uuid	"58CFDE850675FB0009000005" .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE860675FB0009000006>	ns2:uuid	"58CFDE860675FB0009000006" .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE870675FB0009000007>	ns2:uuid	"58CFDE870675FB0009000007" .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE880675FB0009000008>	ns2:uuid	"58CFDE880675FB0009000008" .
+<http://stack-builder.big-data-europe.eu/resources/containers/58CFDE8C0675FB0009000009>	ns2:uuid	"58CFDE8C0675FB0009000009" .
+<http://stack-builder.big-data-europe.eu/resources/containers/58CFDF35F9899B0008000001>	ns2:uuid	"58CFDF35F9899B0008000001" .
+<http://stack-builder.big-data-europe.eu/resources/containers/58CFE02299CA4D0008000001>	ns2:uuid	"58CFE02299CA4D0008000001" .
+<http://stack-builder.big-data-europe.eu/resources/containers/58CFE02499CA4D0008000002>	ns2:uuid	"58CFE02499CA4D0008000002" .
+<http://stack-builder.big-data-europe.eu/resources/containers/58CFE02899CA4D0008000003>	ns2:uuid	"58CFE02899CA4D0008000003" .
+<http://stack-builder.big-data-europe.eu/resources/containers/58CFE02A99CA4D0008000004>	ns2:uuid	"58CFE02A99CA4D0008000004" .
+<http://stack-builder.big-data-europe.eu/resources/containers/58CFE02B99CA4D0008000005>	ns2:uuid	"58CFE02B99CA4D0008000005" .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE700675FB0009000001>	ns1:text	"Test Docker" .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE740675FB0009000002>	ns1:text	"Test Docker1" .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE750675FB0009000003>	ns1:text	"Test Docker12" .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE760675FB0009000004>	ns1:text	"Test Docker123" .
+@prefix ns3:	<http://purl.org/dc/terms/> .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE850675FB0009000005>	ns3:title	"Test Group1" .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE860675FB0009000006>	ns3:title	"Test Group12" .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE870675FB0009000007>	ns3:title	"Test Group123" .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE880675FB0009000008>	ns3:title	"Test Group1234" .
+<http://stack-builder.big-data-europe.eu/resources/containers/58CFDE8C0675FB0009000009>	ns3:title	"Test Container1111" .
+<http://stack-builder.big-data-europe.eu/resources/containers/58CFDF35F9899B0008000001>	ns3:title	"Test Container12341234" .
+<http://stack-builder.big-data-europe.eu/resources/containers/58CFE02299CA4D0008000001>	ns3:title	"Test Container123412341234`" .
+<http://stack-builder.big-data-europe.eu/resources/containers/58CFE02499CA4D0008000002>	ns3:title	"Test Container" .
+<http://stack-builder.big-data-europe.eu/resources/containers/58CFE02899CA4D0008000003>	ns3:title	"Test Container1" .
+<http://stack-builder.big-data-europe.eu/resources/containers/58CFE02A99CA4D0008000004>	ns3:title	"Test Container12" .
+<http://stack-builder.big-data-europe.eu/resources/containers/58CFE02B99CA4D0008000005>	ns3:title	"Test Container123" .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE850675FB0009000005>	ns1:containers	<http://stack-builder.big-data-europe.eu/resources/containers/58CFE02499CA4D0008000002> .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE860675FB0009000006>	ns1:containers	<http://stack-builder.big-data-europe.eu/resources/containers/58CFDE8C0675FB0009000009> ,
+		<http://stack-builder.big-data-europe.eu/resources/containers/58CFDF35F9899B0008000001> .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE870675FB0009000007>	ns1:containers	<http://stack-builder.big-data-europe.eu/resources/containers/58CFDF35F9899B0008000001> .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE880675FB0009000008>	ns1:containers	<http://stack-builder.big-data-europe.eu/resources/containers/58CFE02899CA4D0008000003> .
