@@ -1,6 +1,6 @@
 #!/bin/bash
 bak= $pwd
-cd data/virtuoso/
+cd data/db
 rm -fr dumps
 rm -f virtuoso.db
 rm -f virtuoso.lck
