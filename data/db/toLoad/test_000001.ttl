@@ -38,9 +38,9 @@
 <http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE750675FB0009000003>	ns1:text	"Test Docker12" .
 <http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE760675FB0009000004>	ns1:text	"Test Docker123" .
 @prefix ns3:	<http://purl.org/dc/terms/> .
-<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE700675FB0009000001>	ns3:title	"Docker Compose title1" .
-<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE740675FB0009000002>	ns3:title	"Docker Compose title2" .
-<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE750675FB0009000003>	ns3:title	"Docker Compose title3" .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE700675FB0009000001>	ns3:title	"Such title" .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE740675FB0009000002>	ns3:title	"I'm a docker compose" .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE750675FB0009000003>	ns3:title	"Test Docker C" .
 <http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE760675FB0009000004>	ns3:title	"Docker Compose title4" .
 <http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE850675FB0009000005>	ns3:title	"Test Group1" .
 <http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE860675FB0009000006>	ns3:title	"Test Group12" .
@@ -49,7 +49,7 @@
 <http://stack-builder.big-data-europe.eu/resources/containers/58CFDE8C0675FB0009000009>	ns3:title	"Test Container1111" .
 <http://stack-builder.big-data-europe.eu/resources/containers/58CFDF35F9899B0008000001>	ns3:title	"Test Container12341234" .
 <http://stack-builder.big-data-europe.eu/resources/containers/58CFE02299CA4D0008000001>	ns3:title	"Test Container123412341234`" .
-<http://stack-builder.big-data-europe.eu/resources/containers/58CFE02499CA4D0008000002>	ns3:title	"Test Container" .
+<http://stack-builder.big-data-europe.eu/resources/containers/58CFE02499CA4D0008000002>	ns3:title	"Test Container0" .
 <http://stack-builder.big-data-europe.eu/resources/containers/58CFE02899CA4D0008000003>	ns3:title	"Test Container1" .
 <http://stack-builder.big-data-europe.eu/resources/containers/58CFE02A99CA4D0008000004>	ns3:title	"Test Container12" .
 <http://stack-builder.big-data-europe.eu/resources/containers/58CFE02B99CA4D0008000005>	ns3:title	"Test Container123" .
