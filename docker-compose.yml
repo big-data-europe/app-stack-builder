@@ -27,3 +27,7 @@ services:
       - db:database
     volumes:
       - ./config/resources:/config
+  backend:
+    build: ./backend
+    links:
+      - db:database

@@ -34,6 +34,10 @@ defmodule Dispatcher do
     Proxy.forward conn, path, "http://resource/container-groups/"
   end
 
+  match "/stack-builder-backend/*path" do
+    Proxy.forward conn, path, "http://backend/"
+  end
+
   match _ do
     send_resp( conn, 404, "Route not found.  See config/dispatcher.ex" )
   end
