@@ -9,3 +9,5 @@
 /data/db/virtuoso.pxa
 /data/db/virtuoso.trx
 /data/db/.data_loaded
+/data/db/.dba_pwd_set
+/data/db/.config_set
