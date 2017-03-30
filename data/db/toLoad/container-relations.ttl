@@ -1,0 +1,38 @@
+@base <> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns1:	<http://stackbuilder.semte.ch/vocabularies/core/> .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFDF35F9899BEG08EGEG01>	rdf:type	ns1:ContainerRelation .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02299CA4DEG08EGEG01>	rdf:type	ns1:ContainerRelation .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02499CA4DEG08EGEG02>	rdf:type	ns1:ContainerRelation .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02899CA4DEG08EGEG03>	rdf:type	ns1:ContainerRelation .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02A99CA4DEG08EGEG04>	rdf:type	ns1:ContainerRelation .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02B99CA4DEG08EGEG05>	rdf:type	ns1:ContainerRelation .
+
+@prefix ns2:	<http://mu.semte.ch/vocabularies/core/> .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFDF35F9899BEG08EGEG01>	ns2:uuid	"58CFDF35F9899BEG08EGEG01" .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02299CA4DEG08EGEG01>	ns2:uuid	"58CFE02299CA4DEG08EGEG01" .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02499CA4DEG08EGEG02>	ns2:uuid	"58CFE02499CA4DEG08EGEG02" .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02899CA4DEG08EGEG03>	ns2:uuid	"58CFE02899CA4DEG08EGEG03" .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02A99CA4DEG08EGEG04>	ns2:uuid	"58CFE02A99CA4DEG08EGEG04" .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02B99CA4DEG08EGEG05>	ns2:uuid	"58CFE02B99CA4DEG08EGEG05" .
+
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFDF35F9899BEG08EGEG01>	ns1:index "1" .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02299CA4DEG08EGEG01>	ns1:index "2" .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02499CA4DEG08EGEG02>	ns1:index "1" .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02899CA4DEG08EGEG03>	ns1:index "1" .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02A99CA4DEG08EGEG04>	ns1:index "1" .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02B99CA4DEG08EGEG05>	ns1:index "3" .
+
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFDF35F9899BEG08EGEG01>	ns1:relatedGroup	<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE860675FB0009000006> .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02299CA4DEG08EGEG01>	ns1:relatedGroup	<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE860675FB0009000006> .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02499CA4DEG08EGEG02>	ns1:relatedGroup	<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE870675FB0009000007> .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02899CA4DEG08EGEG03>	ns1:relatedGroup	<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE880675FB0009000008> .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02A99CA4DEG08EGEG04>	ns1:relatedGroup	<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE850675FB0009000005> .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02B99CA4DEG08EGEG05>	ns1:relatedGroup	<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE860675FB0009000006> .
+
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFDF35F9899BEG08EGEG01>	ns1:relatedContainer	<http://stack-builder.big-data-europe.eu/resources/container-items/58CFDE8C0675FB0009000009> .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02299CA4DEG08EGEG01>	ns1:relatedContainer	<http://stack-builder.big-data-europe.eu/resources/container-items/58CFDF35F9899B0008000001> .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02499CA4DEG08EGEG02>	ns1:relatedContainer	<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02299CA4D0008000001> .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02899CA4DEG08EGEG03>	ns1:relatedContainer	<http://stack-builder.big-data-europe.eu/resources/container-items/58CFDE8C0675FB0009000009> .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02A99CA4DEG08EGEG04>	ns1:relatedContainer	<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02A99CA4D0008000004> .
+<http://stack-builder.big-data-europe.eu/resources/container-relations/58CFE02B99CA4DEG08EGEG05>	ns1:relatedContainer	<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02B99CA4D0008000005> .

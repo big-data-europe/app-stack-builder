@@ -1,0 +1,19 @@
+@base <> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns1:	<http://stackbuilder.semte.ch/vocabularies/core/> .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE850675FB0009000005>	rdf:type	ns1:ContainerGroup .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE860675FB0009000006>	rdf:type	ns1:ContainerGroup .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE870675FB0009000007>	rdf:type	ns1:ContainerGroup .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE880675FB0009000008>	rdf:type	ns1:ContainerGroup .
+
+@prefix ns2:	<http://mu.semte.ch/vocabularies/core/> .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE850675FB0009000005>	ns2:uuid	"58CFDE850675FB0009000005" .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE860675FB0009000006>	ns2:uuid	"58CFDE860675FB0009000006" .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE870675FB0009000007>	ns2:uuid	"58CFDE870675FB0009000007" .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE880675FB0009000008>	ns2:uuid	"58CFDE880675FB0009000008" .
+
+@prefix ns3:	<http://purl.org/dc/terms/> .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE850675FB0009000005>	ns3:title	"Such Group1" .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE860675FB0009000006>	ns3:title	"I'm Group12" .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE870675FB0009000007>	ns3:title	"Test Group123" .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/58CFDE880675FB0009000008>	ns3:title	"Group 666" .

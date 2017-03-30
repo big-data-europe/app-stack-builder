@@ -26,12 +26,16 @@ defmodule Dispatcher do
     Proxy.forward conn, path, "http://resource/docker-composes/"
   end
 
-  match "/containers/*path" do
-    Proxy.forward conn, path, "http://resource/containers/"
+  match "/container-items/*path" do
+    Proxy.forward conn, path, "http://resource/container-items/"
   end
 
   match "/container-groups/*path" do
     Proxy.forward conn, path, "http://resource/container-groups/"
+  end
+
+  match "/container-relations/*path" do
+    Proxy.forward conn, path, "http://resource/container-relations/"
   end
 
   match "/stack-builder-backend/*path" do

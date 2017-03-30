@@ -1,0 +1,24 @@
+@base <> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns1:	<http://stackbuilder.semte.ch/vocabularies/core/> .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE700675FB0009000001>	rdf:type	ns1:DockerCompose .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE740675FB0009000002>	rdf:type	ns1:DockerCompose .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE750675FB0009000003>	rdf:type	ns1:DockerCompose .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE760675FB0009000004>	rdf:type	ns1:DockerCompose .
+
+@prefix ns2:	<http://mu.semte.ch/vocabularies/core/> .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE700675FB0009000001>	ns2:uuid	"58CFDE700675FB0009000001" .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE740675FB0009000002>	ns2:uuid	"58CFDE740675FB0009000002" .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE750675FB0009000003>	ns2:uuid	"58CFDE750675FB0009000003" .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE760675FB0009000004>	ns2:uuid	"58CFDE760675FB0009000004" .
+
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE700675FB0009000001>	ns1:text	"First docker file" .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE740675FB0009000002>	ns1:text	"Second docker file" .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE750675FB0009000003>	ns1:text	"Third docker file" .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE760675FB0009000004>	ns1:text	"Fourth docker file" .
+
+@prefix ns3:	<http://purl.org/dc/terms/> .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE700675FB0009000001>	ns3:title	"First Docker title" .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE740675FB0009000002>	ns3:title	"My second docker compose file" .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE750675FB0009000003>	ns3:title	"Another docker compose file" .
+<http://stack-builder.big-data-europe.eu/resources/docker-composes/58CFDE760675FB0009000004>	ns3:title	"Docker Compose title4" .

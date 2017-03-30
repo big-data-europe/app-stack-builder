@@ -1,0 +1,44 @@
+@base <> .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns1:	<http://stackbuilder.semte.ch/vocabularies/core/> .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFDE8C0675FB0009000009>	rdf:type	ns1:ContainerItem .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFDF35F9899B0008000001>	rdf:type	ns1:ContainerItem .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02299CA4D0008000001>	rdf:type	ns1:ContainerItem .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02499CA4D0008000002>	rdf:type	ns1:ContainerItem .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02899CA4D0008000003>	rdf:type	ns1:ContainerItem .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02A99CA4D0008000004>	rdf:type	ns1:ContainerItem .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02B99CA4D0008000005>	rdf:type	ns1:ContainerItem .
+
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFDE8C0675FB0009000009>	ns1:repository	"Repositry Url1" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFDF35F9899B0008000001>	ns1:repository	"Repositry Url2" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02299CA4D0008000001>	ns1:repository	"Repositry Url3" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02499CA4D0008000002>	ns1:repository	"Repositry Url4" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02899CA4D0008000003>	ns1:repository	"Repositry Url5" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02A99CA4D0008000004>	ns1:repository	"Repositry Url6" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02B99CA4D0008000005>	ns1:repository	"Repositry Url7" .
+
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFDE8C0675FB0009000009>	ns1:dockerText	"Docker Text1" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFDF35F9899B0008000001>	ns1:dockerText	"Docker Text2" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02299CA4D0008000001>	ns1:dockerText	"Docker Text3" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02499CA4D0008000002>	ns1:dockerText	"Docker Text4" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02899CA4D0008000003>	ns1:dockerText	"Docker Text5" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02A99CA4D0008000004>	ns1:dockerText	"Docker Text6" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02B99CA4D0008000005>	ns1:dockerText	"Docker Text7" .
+
+@prefix ns2:	<http://mu.semte.ch/vocabularies/core/> .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFDE8C0675FB0009000009>	ns2:uuid	"58CFDE8C0675FB0009000009" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFDF35F9899B0008000001>	ns2:uuid	"58CFDF35F9899B0008000001" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02299CA4D0008000001>	ns2:uuid	"58CFE02299CA4D0008000001" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02499CA4D0008000002>	ns2:uuid	"58CFE02499CA4D0008000002" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02899CA4D0008000003>	ns2:uuid	"58CFE02899CA4D0008000003" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02A99CA4D0008000004>	ns2:uuid	"58CFE02A99CA4D0008000004" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02B99CA4D0008000005>	ns2:uuid	"58CFE02B99CA4D0008000005" .
+
+@prefix ns3:	<http://purl.org/dc/terms/> .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFDE8C0675FB0009000009>	ns3:title	"A container" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFDF35F9899B0008000001>	ns3:title	"Another container" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02299CA4D0008000001>	ns3:title	"Yet container" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02499CA4D0008000002>	ns3:title	"Test Container0" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02899CA4D0008000003>	ns3:title	"1 - Test" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02A99CA4D0008000004>	ns3:title	"2 - 3 Repo" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/58CFE02B99CA4D0008000005>	ns3:title	"Test Container123" .
