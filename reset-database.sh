@@ -3,6 +3,7 @@ bak= $pwd
 cd data/db
 rm -fr dumps
 rm -f virtuoso.db
+rm -f .data_loaded
 rm -f virtuoso.lck
 rm -f virtuoso.log
 rm -f virtuoso.pxa
