@@ -1,3 +1,0 @@
-[submodule "backend"]
-	path = backend
-	url = git@github.com:big-data-europe/mu-docker-compose-file-service.git
