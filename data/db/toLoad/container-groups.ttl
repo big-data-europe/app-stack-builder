@@ -7,7 +7,7 @@
 
 <http://stack-builder.big-data-europe.eu/resources/container-groups/9a3b090e-c157-4ca8-be13-2e85c23b19a7> rdf:type ns1:ContainerGroup .
 <http://stack-builder.big-data-europe.eu/resources/container-groups/9a3b090e-c157-4ca8-be13-2e85c23b19a7> ns2:uuid "9a3b090e-c157-4ca8-be13-2e85c23b19a7" .
-<http://stack-builder.big-data-europe.eu/resources/container-groups/9a3b090e-c157-4ca8-be13-2e85c23b19a7> ns3:title "hadoop" .
+<http://stack-builder.big-data-europe.eu/resources/container-groups/9a3b090e-c157-4ca8-be13-2e85c23b19a7> ns3:title "hdfs" .
 
 <http://stack-builder.big-data-europe.eu/resources/container-groups/886ad326-80b8-4125-97e6-ee32f4a76839> rdf:type ns1:ContainerGroup .
 <http://stack-builder.big-data-europe.eu/resources/container-groups/886ad326-80b8-4125-97e6-ee32f4a76839> ns2:uuid "886ad326-80b8-4125-97e6-ee32f4a76839" .
