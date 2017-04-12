@@ -12,19 +12,19 @@
 
 <http://stack-builder.big-data-europe.eu/resources/container-items/ca6570b4-66ca-4981-8ba2-175720b6b49e>	rdf:type	ns1:ContainerItem .
 <http://stack-builder.big-data-europe.eu/resources/container-items/ca6570b4-66ca-4981-8ba2-175720b6b49e>	ns1:repository	"https://hub.docker.com/r/bde2020/hadoop-datanode/" .
-<http://stack-builder.big-data-europe.eu/resources/container-items/ca6570b4-66ca-4981-8ba2-175720b6b49e>	ns1:dockerText	"  hadoop-datanode:\n    image: bde2020/hadoop-datanode" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/ca6570b4-66ca-4981-8ba2-175720b6b49e>	ns1:dockerText	"  hadoop-datanode:\n    image: bde2020/hadoop-datanode\n    hostname: datanode\n    env_file:\n      - ./config/hadoop/hadoop.env" .
 <http://stack-builder.big-data-europe.eu/resources/container-items/ca6570b4-66ca-4981-8ba2-175720b6b49e>	ns2:uuid	"ca6570b4-66ca-4981-8ba2-175720b6b49e" .
 <http://stack-builder.big-data-europe.eu/resources/container-items/ca6570b4-66ca-4981-8ba2-175720b6b49e>	ns3:title	"bde2020/hadoop-datanode" .
 
 <http://stack-builder.big-data-europe.eu/resources/container-items/dc9fab6e-65c7-4707-9396-801a789474c7>	rdf:type	ns1:ContainerItem .
 <http://stack-builder.big-data-europe.eu/resources/container-items/dc9fab6e-65c7-4707-9396-801a789474c7>	ns1:repository	"https://hub.docker.com/r/bde2020/hadoop-namenode/" .
-<http://stack-builder.big-data-europe.eu/resources/container-items/dc9fab6e-65c7-4707-9396-801a789474c7>	ns1:dockerText	"  hadoop-namenode:\n    image: bde2020/hadoop-namenode" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/dc9fab6e-65c7-4707-9396-801a789474c7>	ns1:dockerText	"  hadoop-namenode:\n    image: bde2020/hadoop-namenode\n    hostname: namenode\n    volumes:\n      - ./data/hadoop/namenode:/hadoop/dfs/name\n    expose:\n      - \"50070\"\n    environment:\n      CLUSTER_NAME: test\n      INIT_DAEMON_STEP: setup_hdfs\n      VIRTUAL_HOST: hdfs-namenode.demo.big-data-europe.local\n    env_file:\n      - ./config/hadoop/hadoop.env" .
 <http://stack-builder.big-data-europe.eu/resources/container-items/dc9fab6e-65c7-4707-9396-801a789474c7>	ns2:uuid	"dc9fab6e-65c7-4707-9396-801a789474c7" .
 <http://stack-builder.big-data-europe.eu/resources/container-items/dc9fab6e-65c7-4707-9396-801a789474c7>	ns3:title	"bde2020/hadoop-namenode" .
 
 <http://stack-builder.big-data-europe.eu/resources/container-items/e4d3abc3-d740-4fa9-86ed-d7fdbb602be4>	rdf:type	ns1:ContainerItem .
 <http://stack-builder.big-data-europe.eu/resources/container-items/e4d3abc3-d740-4fa9-86ed-d7fdbb602be4>	ns1:repository	"https://hub.docker.com/r/bde2020/hdfs-filebrowser/" .
-<http://stack-builder.big-data-europe.eu/resources/container-items/e4d3abc3-d740-4fa9-86ed-d7fdbb602be4>	ns1:dockerText	"  hdfs-filebrowser:\n    image: bde2020/hdfs-filebrowser" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/e4d3abc3-d740-4fa9-86ed-d7fdbb602be4>	ns1:dockerText	"  hdfs-filebrowser:\n    image: bde2020/hdfs-filebrowser\n    hostname: filebrowser\n    environment:\n      NAMENODE_HOST: namenode\n      VIRTUAL_HOST: hue.demo.big-data-europe.local\n      VIRTUAL_PORT: 8088" .
 <http://stack-builder.big-data-europe.eu/resources/container-items/e4d3abc3-d740-4fa9-86ed-d7fdbb602be4>	ns2:uuid	"e4d3abc3-d740-4fa9-86ed-d7fdbb602be4" .
 <http://stack-builder.big-data-europe.eu/resources/container-items/e4d3abc3-d740-4fa9-86ed-d7fdbb602be4>	ns3:title	"bde2020/hdfs-filebrowser" .
 
@@ -42,13 +42,13 @@
 
 <http://stack-builder.big-data-europe.eu/resources/container-items/e641937c-4660-48ca-afa5-5cdb1f34b2f1>	rdf:type	ns1:ContainerItem .
 <http://stack-builder.big-data-europe.eu/resources/container-items/e641937c-4660-48ca-afa5-5cdb1f34b2f1>	ns1:repository	"https://hub.docker.com/r/bde2020/spark-master/" .
-<http://stack-builder.big-data-europe.eu/resources/container-items/e641937c-4660-48ca-afa5-5cdb1f34b2f1>	ns1:dockerText	"  spark-master:\n    image: bde2020/spark-master" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/e641937c-4660-48ca-afa5-5cdb1f34b2f1>	ns1:dockerText	"  spark-master:\n    image: bde2020/spark-master\n  container_name: spark-master\n  ports:\n    - \"8080:8080\"\n    - \"7077:7077\"\n  environment:\n    - INIT_DAEMON_STEP=setup_spark\n    - \"constraint:node==<yourmasternode>\"" .
 <http://stack-builder.big-data-europe.eu/resources/container-items/e641937c-4660-48ca-afa5-5cdb1f34b2f1>	ns2:uuid	"e641937c-4660-48ca-afa5-5cdb1f34b2f1" .
 <http://stack-builder.big-data-europe.eu/resources/container-items/e641937c-4660-48ca-afa5-5cdb1f34b2f1>	ns3:title	"bde2020/spark-master" .
 
 <http://stack-builder.big-data-europe.eu/resources/container-items/e31b7a71-5b29-45a4-ba72-04eb7e3433e0>	rdf:type	ns1:ContainerItem .
 <http://stack-builder.big-data-europe.eu/resources/container-items/e31b7a71-5b29-45a4-ba72-04eb7e3433e0>	ns1:repository	"https://hub.docker.com/r/bde2020/spark-worker/" .
-<http://stack-builder.big-data-europe.eu/resources/container-items/e31b7a71-5b29-45a4-ba72-04eb7e3433e0>	ns1:dockerText	"  spark-worker:\n    image: bde2020/spark-worker" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/e31b7a71-5b29-45a4-ba72-04eb7e3433e0>	ns1:dockerText	"  spark-worker:\n    image: bde2020/spark-worker\n  container_name: spark-worker\n  depends_on:\n    - spark-master\n  ports:\n    - \"8081:8081\"\n  environment:\n    - \"SPARK_MASTER=spark://spark-master:7077\"\n    - \"constraint:node==<yourmasternode>\"" .
 <http://stack-builder.big-data-europe.eu/resources/container-items/e31b7a71-5b29-45a4-ba72-04eb7e3433e0>	ns2:uuid	"e31b7a71-5b29-45a4-ba72-04eb7e3433e0" .
 <http://stack-builder.big-data-europe.eu/resources/container-items/e31b7a71-5b29-45a4-ba72-04eb7e3433e0>	ns3:title	"bde2020/spark-worker" .
 
@@ -66,25 +66,25 @@
 
 <http://stack-builder.big-data-europe.eu/resources/container-items/1403198e-46d7-488f-921c-bce5af53bdde>	rdf:type	ns1:ContainerItem .
 <http://stack-builder.big-data-europe.eu/resources/container-items/1403198e-46d7-488f-921c-bce5af53bdde>	ns1:repository	"https://hub.docker.com/r/bde2020/flink-master/" .
-<http://stack-builder.big-data-europe.eu/resources/container-items/1403198e-46d7-488f-921c-bce5af53bdde>	ns1:dockerText	"  flink-master:\n    image: bde2020/flink-master" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/1403198e-46d7-488f-921c-bce5af53bdde>	ns1:dockerText	"  flink-master:\n    image: bde2020/flink-master\n   hostname: flink-master\n   container_name: flink-master\n   environment:\n      - INIT_DAEMON_STEP=setup_flink\n#     - \"constraint:node==<yourmasternode>\"\n   ports:\n     - \"8080:8080\"\n     - \"8081:8081\"" .
 <http://stack-builder.big-data-europe.eu/resources/container-items/1403198e-46d7-488f-921c-bce5af53bdde>	ns2:uuid	"1403198e-46d7-488f-921c-bce5af53bdde" .
 <http://stack-builder.big-data-europe.eu/resources/container-items/1403198e-46d7-488f-921c-bce5af53bdde>	ns3:title	"bde2020/flink-master" .
 
 <http://stack-builder.big-data-europe.eu/resources/container-items/0835e47a-d70e-44e6-8b6a-64b53c921566>	rdf:type	ns1:ContainerItem .
 <http://stack-builder.big-data-europe.eu/resources/container-items/0835e47a-d70e-44e6-8b6a-64b53c921566>	ns1:repository	"https://hub.docker.com/r/bde2020/hadoop-resourcemanager/" .
-<http://stack-builder.big-data-europe.eu/resources/container-items/0835e47a-d70e-44e6-8b6a-64b53c921566>	ns1:dockerText	"  hadoop-resourcemanager:\n    image: bde2020/hadoop-resourcemanager" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/0835e47a-d70e-44e6-8b6a-64b53c921566>	ns1:dockerText	"  hadoop-resourcemanager:\n    image: bde2020/hadoop-resourcemanager\n    hostname: resourcemanager\n    expose:\n      - \"8031\"\n      - \"8088\"\n    environment:\n      VIRTUAL_HOST: hdfs-resourcemanager.demo.big-data-europe.local\n      VIRTUAL_PORT: 8088\n    env_file:\n      - ./config/hadoop/hadoop.env" .
 <http://stack-builder.big-data-europe.eu/resources/container-items/0835e47a-d70e-44e6-8b6a-64b53c921566>	ns2:uuid	"0835e47a-d70e-44e6-8b6a-64b53c921566" .
 <http://stack-builder.big-data-europe.eu/resources/container-items/0835e47a-d70e-44e6-8b6a-64b53c921566>	ns3:title	"bde2020/hadoop-resourcemanager" .
 
 <http://stack-builder.big-data-europe.eu/resources/container-items/cc891837-b4fa-41bb-b46e-fc1cd1fdd1b9>	rdf:type	ns1:ContainerItem .
 <http://stack-builder.big-data-europe.eu/resources/container-items/cc891837-b4fa-41bb-b46e-fc1cd1fdd1b9>	ns1:repository	"https://hub.docker.com/r/bde2020/hadoop-historyserver/" .
-<http://stack-builder.big-data-europe.eu/resources/container-items/cc891837-b4fa-41bb-b46e-fc1cd1fdd1b9>	ns1:dockerText	"  hadoop-historyserver:\n    image: bde2020/hadoop-historyserver" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/cc891837-b4fa-41bb-b46e-fc1cd1fdd1b9>	ns1:dockerText	"  hadoop-historyserver:\n    image: bde2020/hadoop-historyserver\n    hostname: historyserver\n    volumes:\n      - ./data/hadoop/historyserver:/hadoop/yarn/timeline\n    env_file:\n      - ./config/hadoop/hadoop.env" .
 <http://stack-builder.big-data-europe.eu/resources/container-items/cc891837-b4fa-41bb-b46e-fc1cd1fdd1b9>	ns2:uuid	"cc891837-b4fa-41bb-b46e-fc1cd1fdd1b9" .
 <http://stack-builder.big-data-europe.eu/resources/container-items/cc891837-b4fa-41bb-b46e-fc1cd1fdd1b9>	ns3:title	"bde2020/hadoop-historyserver" .
 
 <http://stack-builder.big-data-europe.eu/resources/container-items/caec81e6-0b6e-4d13-8078-7248c099ab54>	rdf:type	ns1:ContainerItem .
 <http://stack-builder.big-data-europe.eu/resources/container-items/caec81e6-0b6e-4d13-8078-7248c099ab54>	ns1:repository	"https://hub.docker.com/r/bde2020/hadoop-nodemanager/" .
-<http://stack-builder.big-data-europe.eu/resources/container-items/caec81e6-0b6e-4d13-8078-7248c099ab54>	ns1:dockerText	"  hadoop-nodemanager:\n    image: bde2020/hadoop-nodemanager" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/caec81e6-0b6e-4d13-8078-7248c099ab54>	ns1:dockerText	"  hadoop-nodemanager:\n    image: bde2020/hadoop-nodemanager\n    hostname: nodemanager\n    expose:\n      - \"8042\"\n    environment:\n      VIRTUAL_HOST: hdfs-nodemanager.demo.big-data-europe.local\n    env_file:\n      - ./config/hadoop/hadoop.env" .
 <http://stack-builder.big-data-europe.eu/resources/container-items/caec81e6-0b6e-4d13-8078-7248c099ab54>	ns2:uuid	"caec81e6-0b6e-4d13-8078-7248c099ab54" .
 <http://stack-builder.big-data-europe.eu/resources/container-items/caec81e6-0b6e-4d13-8078-7248c099ab54>	ns3:title	"bde2020/hadoop-nodemanager" .
 
@@ -102,7 +102,7 @@
 
 <http://stack-builder.big-data-europe.eu/resources/container-items/021a48e5-324d-4533-84b0-ef1434d17d2d>	rdf:type	ns1:ContainerItem .
 <http://stack-builder.big-data-europe.eu/resources/container-items/021a48e5-324d-4533-84b0-ef1434d17d2d>	ns1:repository	"https://hub.docker.com/r/bde2020/flink-worker/" .
-<http://stack-builder.big-data-europe.eu/resources/container-items/021a48e5-324d-4533-84b0-ef1434d17d2d>	ns1:dockerText	"  flink-worker:\n    image: bde2020/flink-worker" .
+<http://stack-builder.big-data-europe.eu/resources/container-items/021a48e5-324d-4533-84b0-ef1434d17d2d>	ns1:dockerText	"  flink-worker:\n    image: bde2020/flink-worker\n   hostname: flink-worker\n   container_name: flink-worker\n   environment:\n     - \"FLINK_MASTER_PORT_6123_TCP_ADDR=flink-master\"\n     - \"constraint:node==<yourworkernode>\"\n   depends_on:\n      - \"flink-master\"" .
 <http://stack-builder.big-data-europe.eu/resources/container-items/021a48e5-324d-4533-84b0-ef1434d17d2d>	ns2:uuid	"021a48e5-324d-4533-84b0-ef1434d17d2d" .
 <http://stack-builder.big-data-europe.eu/resources/container-items/021a48e5-324d-4533-84b0-ef1434d17d2d>	ns3:title	"bde2020/flink-worker" .
 
