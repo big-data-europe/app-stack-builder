@@ -35,3 +35,9 @@ services:
     image: bde2020/mu-docker-compose-file-service:0.1.0
     links:
       - db:database
+  migrationsservice:
+      image: semtech/mu-migrations-service
+      links:
+        - db:database
+      volumes:
+        - ./config/migrations:/data/migrations
