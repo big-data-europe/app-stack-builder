@@ -1,7 +1,7 @@
 version: "2"
 services:
   frontend:
-    image: bde2020/ember-stack-builder-frontend:0.2.0
+    image: bde2020/ember-stack-builder-frontend:0.2.3
     ports:
       - "88:80"
     links:
