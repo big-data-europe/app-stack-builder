@@ -1,0 +1,14 @@
+version: "2"
+services:
+  dispatcher:
+    ports:
+      - "444:80"
+  db:
+    ports:
+      - "8890:8890"
+  resource:
+    ports:
+      - "555:80"
+  backend:
+    ports:
+      - "666:80"
